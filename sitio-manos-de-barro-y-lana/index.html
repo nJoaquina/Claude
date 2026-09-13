@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manos de Barro y Lana — Artesanías tradicionales</title>
+  <meta name="description" content="Emprendimiento de artesanías: tejidos, cerámicas y pinturas hechas a mano.">
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+  <a class="saltar-enlace" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__interior">
+      <p class="marca">
+        <span aria-hidden="true">🧶</span> Manos de Barro y Lana
+      </p>
+
+      <nav class="navegacion-principal" aria-label="Principal">
+        <ul class="navegacion-principal__lista">
+          <li><a href="#catalogo">Artículos</a></li>
+          <li><a href="#acerca-de">Acerca de</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal" class="contenedor">
+
+    <section class="presentacion" aria-labelledby="presentacion-titulo">
+      <h1 id="presentacion-titulo">Artesanías hechas a mano, con historia</h1>
+      <p>Descubrí tejidos, cerámicas y pinturas elaborados por artesanas y artesanos locales, pieza por pieza.</p>
+    </section>
+
+    <!-- ================= CATÁLOGO ================= -->
+    <section id="catalogo" class="catalogo" aria-labelledby="catalogo-titulo">
+      <h2 id="catalogo-titulo">Nuestros artículos</h2>
+
+      <p class="filtro-descripcion" id="filtro-descripcion">
+        Filtrá los artículos por categoría:
+      </p>
+
+      <!-- Truco CSS: radio buttons + :checked + combinador de hermanos generales (~) -->
+      <input type="radio" name="categoria" id="cat-todos" class="filtro-input" checked>
+      <label for="cat-todos" class="filtro-etiqueta">Todos</label>
+
+      <input type="radio" name="categoria" id="cat-tejidos" class="filtro-input">
+      <label for="cat-tejidos" class="filtro-etiqueta">Tejidos</label>
+
+      <input type="radio" name="categoria" id="cat-ceramicas" class="filtro-input">
+      <label for="cat-ceramicas" class="filtro-etiqueta">Cerámicas</label>
+
+      <input type="radio" name="categoria" id="cat-pinturas" class="filtro-input">
+      <label for="cat-pinturas" class="filtro-etiqueta">Pinturas</label>
+
+      <!-- ---------- TEJIDOS ---------- -->
+      <div class="articulos-grupo" id="grupo-tejidos" aria-labelledby="titulo-tejidos">
+        <h3 id="titulo-tejidos" class="articulos-grupo__titulo">Tejidos</h3>
+        <ul class="articulos-lista">
+
+          <li>
+            <article class="tarjeta-articulo">
+              <img class="tarjeta-articulo__imagen" src="articulos/tejidos/articulo1.png"
+                   alt="Poncho de lana andino tejido a mano en tonos marrones y beige" width="300" height="220">
+              <h4 class="tarjeta-articulo__titulo">Poncho de lana andino</h4>
+              <p class="tarjeta-articulo__descripcion">Tejido en telar de cintura con lana de oveja hilada a mano. Diseño geométrico tradicional.</p>
+              <p class="tarjeta-articulo__precio">$ 28.000</p>
+              <a class="tarjeta-articulo__enlace" href="articulos/tejidos/articulo1.pdf">
+                Más información sobre el poncho de lana andino (PDF)
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="tarjeta-articulo">
+              <img class="tarjeta-articulo__imagen" src="articulos/tejidos/articulo2.png"
+                   alt="Manta tejida a telar con rayas de colores cálidos" width="300" height="220">
+              <h4 class="tarjeta-articulo__titulo">Manta tejida a telar</h4>
+              <p class="tarjeta-articulo__descripcion">Manta de algodón y lana, tejida en telar tradicional con motivos de rayas multicolor.</p>
+              <p class="tarjeta-articulo__precio">$ 22.500</p>
+              <a class="tarjeta-articulo__enlace" href="articulos/tejidos/articulo2.pdf">
+                Más información sobre la manta tejida a telar (PDF)
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="tarjeta-articulo">
+              <img class="tarjeta-articulo__imagen" src="articulos/tejidos/articulo3.png"
+                   alt="Bufanda de alpaca color gris natural" width="300" height="220">
+              <h4 class="tarjeta-articulo__titulo">Bufanda de alpaca</h4>
+              <p class="tarjeta-articulo__descripcion">Bufanda suave de fibra de alpaca 100% natural, ideal para el invierno.</p>
+              <p class="tarjeta-articulo__precio">$ 15.000</p>
+              <a class="tarjeta-articulo__enlace" href="articulos/tejidos/articulo3.pdf">
+                Más información sobre la bufanda de alpaca (PDF)
+              </a>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- ---------- CERÁMICAS ---------- -->
+      <div class="articulos-grupo" id="grupo-ceramicas" aria-labelledby="titulo-ceramicas">
+        <h3 id="titulo-ceramicas" class="articulos-grupo__titulo">Cerámicas</h3>
+        <ul class="articulos-lista">
+
+          <li>
+            <article class="tarjeta-articulo">
+              <img class="tarjeta-articulo__imagen" src="articulos/ceramicas/articulo1.png"
+                   alt="Jarrón de cerámica esmaltada en color azul" width="300" height="220">
+              <h4 class="tarjeta-articulo__titulo">Jarrón de cerámica esmaltada</h4>
+              <p class="tarjeta-articulo__descripcion">Jarrón torneado a mano y esmaltado en horno de leña. Pieza única.</p>
+              <p class="tarjeta-articulo__precio">$ 19.900</p>
+              <a class="tarjeta-articulo__enlace" href="articulos/ceramicas/articulo1.pdf">
+                Más información sobre el jarrón de cerámica esmaltada (PDF)
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="tarjeta-articulo">
+              <img class="tarjeta-articulo__imagen" src="articulos/ceramicas/articulo2.png"
+                   alt="Plato decorativo de cerámica pintado a mano con motivos florales" width="300" height="220">
+              <h4 class="tarjeta-articulo__titulo">Plato decorativo pintado a mano</h4>
+              <p class="tarjeta-articulo__descripcion">Plato de cerámica pintado con óxidos naturales, apto solo para decoración.</p>
+              <p class="tarjeta-articulo__precio">$ 12.300</p>
+              <a class="tarjeta-articulo__enlace" href="articulos/ceramicas/articulo2.pdf">
+                Más información sobre el plato decorativo (PDF)
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="tarjeta-articulo">
+              <img class="tarjeta-articulo__imagen" src="articulos/ceramicas/articulo3.png"
+                   alt="Set de tres tazas de barro cocido color terracota" width="300" height="220">
+              <h4 class="tarjeta-articulo__titulo">Set de tazas de barro cocido</h4>
+              <p class="tarjeta-articulo__descripcion">Juego de tres tazas de barro cocido, cada una con un acabado ligeramente distinto.</p>
+              <p class="tarjeta-articulo__precio">$ 17.000</p>
+              <a class="tarjeta-articulo__enlace" href="articulos/ceramicas/articulo3.pdf">
+                Más información sobre el set de tazas de barro (PDF)
+              </a>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- ---------- PINTURAS ---------- -->
+      <div class="articulos-grupo" id="grupo-pinturas" aria-labelledby="titulo-pinturas">
+        <h3 id="titulo-pinturas" class="articulos-grupo__titulo">Pinturas</h3>
+        <ul class="articulos-lista">
+
+          <li>
+            <article class="tarjeta-articulo">
+              <img class="tarjeta-articulo__imagen" src="articulos/pinturas/articulo1.png"
+                   alt="Paisaje serrano al óleo con montañas verdes y cielo despejado" width="300" height="220">
+              <h4 class="tarjeta-articulo__titulo">Paisaje serrano al óleo</h4>
+              <p class="tarjeta-articulo__descripcion">Óleo sobre lienzo de 40x50 cm que retrata las sierras al atardecer.</p>
+              <p class="tarjeta-articulo__precio">$ 35.000</p>
+              <a class="tarjeta-articulo__enlace" href="articulos/pinturas/articulo1.pdf">
+                Más información sobre el paisaje serrano al óleo (PDF)
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="tarjeta-articulo">
+              <img class="tarjeta-articulo__imagen" src="articulos/pinturas/articulo2.png"
+                   alt="Retrato en acuarela de un rostro en tonos suaves" width="300" height="220">
+              <h4 class="tarjeta-articulo__titulo">Retrato en acuarela</h4>
+              <p class="tarjeta-articulo__descripcion">Retrato realizado con acuarelas sobre papel de algodón de 300 g.</p>
+              <p class="tarjeta-articulo__precio">$ 24.800</p>
+              <a class="tarjeta-articulo__enlace" href="articulos/pinturas/articulo2.pdf">
+                Más información sobre el retrato en acuarela (PDF)
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="tarjeta-articulo">
+              <img class="tarjeta-articulo__imagen" src="articulos/pinturas/articulo3.png"
+                   alt="Cuadro abstracto en acrílico con formas geométricas de colores vivos" width="300" height="220">
+              <h4 class="tarjeta-articulo__titulo">Cuadro abstracto acrílico</h4>
+              <p class="tarjeta-articulo__descripcion">Composición abstracta en acrílico sobre bastidor, técnica de espátula.</p>
+              <p class="tarjeta-articulo__precio">$ 30.200</p>
+              <a class="tarjeta-articulo__enlace" href="articulos/pinturas/articulo3.pdf">
+                Más información sobre el cuadro abstracto acrílico (PDF)
+              </a>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- ================= ACERCA DE ================= -->
+    <section id="acerca-de" class="acerca-de" aria-labelledby="acerca-de-titulo">
+      <h2 id="acerca-de-titulo">Acerca de</h2>
+      <p>
+        Este sitio es mantenido por <strong>Cooperativa Manos de Barro y Lana</strong>,
+        un grupo de artesanas y artesanos dedicado a difundir y vender técnicas
+        tradicionales de tejido, alfarería y pintura.
+      </p>
+      <p>
+        Cada artículo que ofrecemos es elaborado de forma artesanal, en pequeños
+        lotes, respetando los tiempos y procesos de cada oficio.
+      </p>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section id="contacto" class="contacto" aria-labelledby="contacto-titulo">
+      <h2 id="contacto-titulo">Contacto</h2>
+      <p>¿Tenés una consulta sobre algún artículo? Escribinos y te respondemos a la brevedad.</p>
+
+      <form class="formulario-contacto" action="#" method="get">
+        <div class="campo-formulario">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" autocomplete="email" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="boton-primario">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie-de-pagina">
+    <div class="contenedor">
+      <p>© 2026 Cooperativa Manos de Barro y Lana. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
